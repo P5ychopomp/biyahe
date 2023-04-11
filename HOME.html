@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width",initial-scale="1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Welcome to Biyahe</title>
+	<link rel="icon" type="image/png" href="images/logo.png"/>
+	<link rel="stylesheet" type="text/css" href="css/login-style.css">
+</head>
+<body>
+	<header id="main-header">
+		<div class="head">
+			<a href="HOME.html" style="color: white;">
+				<h1>Biyahe</h1>
+			</a>
+			<ul>
+				<li><a href="ABOUT-LOGIN.html">About Us</a></li>
+				<li><a href="PRIVACY-LOGIN.html">Privacy Policy</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<section>
+		<div class="showcase">
+			<img src="images/logo.png" alt="Biyahe Logo" class="center">
+				<h2>Welcome to<span class="biyahe_style">Biyahe!</span></h2>
+			<div class="subtext">
+				<p>
+					Sit back, relax and let Biyahe show you the way!
+				</p>
+			</div>
+		</div>
+	</section>
+	<br>
+
+	<div class="container">
+		<div class="login_container">
+			<form action="LANDING.HTML">
+				<div id="signin">Sign in</div>
+				
+				<div id="email_container">
+					<input type="text" id="Email" placeholder="Email">
+				</div>
+			
+				<div id="pass_container">
+					<input type="password" id="Password" placeholder="Password">
+				</div>
+			
+				<a href="#">Forgot Password</a>
+				<button type="submit" id="login_button" value="Go to Homepage">Log In</button>
+				<p id="alt_signin">or connect using</p>
+				<div class="login_button_alt">
+					<button type="submit" id="login_facebook" value="Go to Homepage">Facebook</button>
+					<button type="submit" id="login_google" value="Go to Homepage">Google</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="signup_container">
+			<form action="LANDING.HTML">
+				<div id="signup">Create a New Account</div>
+				<div class="name">
+					<input type="text" id="firstName" placeholder="First Name">
+					<input type="text" id="lastName" placeholder="Last Name">
+				</div>
+				<input type="text" class="cred" placeholder="Email">
+				<input type="text" class="cred" placeholder="Phone Number">
+				<input type="password" class="cred" placeholder="Password">
+				<input type="password" class="cred" placeholder="Confirm Password">
+
+				<div class="sect4">
+					<div class="bday">
+						<label class="birthday_label">Birthday</label><br>
+						<input type="date" class="birthdate">
+					</div>
+					<div><button type="submit" id="attach_id">Attach Id</button></div>
+				</div>
+			
+				<div class="sect5">
+					<div>
+						<div class="gender_label"><label>Gender</label></div>
+							<ul>
+								<li><input type="radio" id="male" name="gender" value="male">
+								<label for="male">Male</label></li>
+								<li><input type="radio" id="female" name="gender" value="female">
+								<label for="female">Female</label></li>
+								<li><input type="radio" id="other" name="gender" value="other">
+								<label for="other">Other</label></li>
+							</ul>
+					</div>
+					<p>By clicking Sign Up, you agree to our Terms and you have read our <a href="privacy_policy.html">Privacy Policy</a>, including our Cookie Use.</p>
+				</div>
+				<button type="submit" id="signup_button" value="Go to Homepage">Sign Up</button>
+			</form>
+		</div>
+		
+	</div>
+
+	
+	<footer id="main-footer">
+		<p>Copyright &copy; 2020 Biyahe</p>
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,390 @@
+@font-face {
+    src: url(fonts/Gloss_And_Bloom.ttf);
+    font-family: BiyaheFontBold;
+}
+
+body{
+	color:#555;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:16px;
+    line-height:1.6em;
+    margin: 0;
+    overflow: overlay;
+    background-image: url("../images/ani-bg3.svg");
+    background-size: 1900px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 5vh;
+}
+
+body::-webkit-scrollbar-track
+{
+    background-image: url("../images/transparent-scroll.png");
+}
+
+body::-webkit-scrollbar
+{
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background-color: rgb(194, 194, 194);
+}
+
+body::-webkit-scrollbar-thumb:hover
+{
+    background-color: rgb(167, 167, 167);
+}
+
+.head{
+    line-height: 1em;
+	width:79.3%;
+	margin:0 auto;
+}
+
+#main-header{
+    width: 101%;
+    position: fixed;
+	background-color:rgb(48, 120, 255);
+    color:#fff;
+    padding-top: 10px;
+    box-shadow: 0px 0 50px 10px rgb(51, 51, 51);
+	z-index: 1;
+	top: 0;
+}
+#main-header h1{
+    float: left;
+    font-family: BiyaheFontBold;
+}
+
+#main-header ul{
+    float: right;
+    padding-left: 25%;
+    padding-top: 12px;
+    list-style: none;
+    font-weight: bold;
+}
+
+#main-header li{
+	display:inline;
+}
+
+#main-header a{
+	color:#fff;
+	text-decoration: none;
+	font-size:18px;
+	padding-right:15px;
+}
+
+section{
+    margin-top: 5em;
+}
+
+.showcase{
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.788);
+}
+
+.showcase h2{
+    margin: 0;
+    font-size: 64px;
+    line-height: 1.25em;
+}
+
+.showcase .biyahe_style{
+    padding-left: 30px;
+    font-family: BiyaheFontBold;
+}
+
+.subtext{
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.container{
+    overflow: auto;
+    width: 1000px;
+    margin-top: 10px;
+    margin: 0 auto;
+    padding: 25px 0;
+    border-radius: 30px;
+    display:grid;
+    grid-template-columns: 40% 60%;
+    box-shadow: 0 0 50px 2px rgb(179, 179, 179);
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+button:focus{
+    outline: none;
+}
+
+.login_container{
+    border-right: rgb(212, 212, 212) 0.5px solid;
+    margin: 25px 0 25px 45px;
+    padding: 25px 0 25px;
+}
+
+input:focus{
+    outline: none;
+}
+
+#signin{
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 1em;
+}
+
+button{
+    transition: ease-in-out .2s;
+}
+
+button:hover{
+    box-shadow: inset 0 0 25px 5px rgba(85, 85, 85, 0.411);
+}
+
+#Email{
+    background-color: transparent;
+    background-image: url(../images/username.png);
+    background-position: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    margin-top: 10px;
+    padding: 20px;
+    padding-left: 60px;
+    border: 2px solid rgb(48, 120, 255);
+    border-radius: 50px;
+    width: 55%;
+    
+}
+
+#Password{
+    background-color: transparent;
+    background-image: url(../images/password.png);
+    background-position: 23px;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding: 20px;
+    padding-left: 60px;
+    border: 2px solid rgb(48, 120, 255);
+    border-radius: 50px;
+    width: 55%;
+}
+
+.login_container a{
+    margin-top: 100px;
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    margin-left: 43%;
+    font-size: 14px;
+}
+
+.login_button_alt{
+    display: block;
+    margin-left: 21px;
+    transition: ease-in-out .2s;
+}
+
+.login_button_alt button:hover{
+    box-shadow: inset 0 0 25px 5px rgba(255, 255, 255, 0.384);
+}
+
+#login_button[type=submit]{
+    margin: 1em 0 4em;
+    border: none;
+    background-color: rgb(48, 120, 255);
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    width: 175px;
+    height: 35px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer
+}
+
+#login_facebook[type=submit]{
+    border: none;
+    background-color: rgb(1, 46, 124);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 130px;
+    height: 35px;
+    font-weight: bold;
+    cursor: pointer
+}
+
+#login_google[type=submit]{
+    border: none;
+    background-color: rgb(207, 0, 0);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 130px;
+    height: 35px;
+    font-weight: bold;
+    cursor: pointer
+}
+
+#alt_signin{
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: -45px;
+}
+
+.signup_container{
+    padding: 50px 0 50px 0;
+    padding-left: 40px;
+    padding-right: 10%;
+}
+
+#signup{
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 1em;
+}
+
+#firstName{
+    background-color: transparent;
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid rgb(187, 187, 187);
+    border-radius: 10px;
+    width: 42.5%;
+}
+
+#lastName{
+    background-color: transparent;
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid rgb(187, 187, 187);
+    border-radius: 10px;
+    width: 42.5%;
+}
+
+.cred{
+    background-color: transparent;
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid rgb(187, 187, 187);
+    border-radius: 10px;
+    width: 90.5%;
+}
+
+.sect4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bday{
+    font-weight: bold;
+    color: rgb(112, 112, 112);
+    margin: 15px 0 15px 0;
+}
+ 
+.birthdate{
+    background-color: transparent;
+    padding: 5px;
+    border: 2px solid rgb(187, 187, 187);
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(112, 112, 112);
+}
+
+#attach_id{
+    background-color: transparent;
+    display: block;
+    margin: 25px 20px 0;
+    border: 2px solid rgb(187, 187, 187);
+    color: rgb(112, 112, 112);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#attach_id:hover{
+    border: 2px solid rgb(187, 187, 187);
+    background-color: rgb(187, 187, 187);
+    color: white;
+}
+
+.sect5{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.gender_label{
+    font-weight: bold;
+    color: rgb(112, 112, 112);
+    margin: 0 0 5px;
+}
+
+.signup_container ul{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.signup_container li{
+    display: inline;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.signup_container p{
+    float: right;
+    font-size: 10px;
+    line-height: 1.25em;
+}
+
+.signup_container p a{
+    text-decoration: none;
+}
+
+#signup_button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.5em;
+    border: none;
+    background-color: rgb(0, 214, 203);
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    width: 175px;
+    height: 35px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#main-footer{
+	text-align: center;
+	padding:20px;
+    margin-top:10px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.719);
+}
+

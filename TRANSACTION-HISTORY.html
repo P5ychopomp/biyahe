@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width" ,initial-scale="1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Transaction History</title>
+<link rel="stylesheet" type="text/css" href="css/transactionhistory-style.css">
+<link rel="icon" type="image/png" href="images/logo.png" />
+</head>
+<body>
+  <header id="main-header">
+    <div class="head">
+      <a href="LANDING.html" style="color: white;">
+        <h1>Biyahe</h1>
+      </a>
+      <ul>
+        <li><a href="LANDING.html">Home</a></li>
+        <li><a href="COMMUTE.html">Commute</a></li>
+        <li><a href="CASHIN.html">Cash in</a></li>
+        <li><a href="TRANSACTION-HISTORY.html">Transaction History</a></li>
+        <div class="right-menu">
+          <button class="menu-button"></button>
+          <div class="dropdown-menu">
+              <a href="REPORT.html">Report</a>
+              <a href="PRIVACY.html">Privacy Policy</a>
+              <a href="ABOUT.html">About Us</a>
+              <a href="HELP.html">Help</a>
+              <a href="HOME.html">Log-out</a>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </header>
+		<div class="content-area" align="center">
+		  <h2>Transaction History</h2>
+    </div>
+    
+    <div class="container">
+      <button onclick="appear('content-table-carpool','content-table-payment');" id="carpool">Carpool</button>
+      <button onclick="appear('content-table-payment','content-table-carpool');" id="payment">Payment</button>
+    </div>
+
+<table id="content-table-carpool" class="content-table">
+  <thead>
+    <tr>
+      <th>Location</th>
+      <th>Drop-off</th>
+      <th>Driver</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vertis North Ayala Malls</td>
+      <td>Main Entrance</td>
+      <td>Manuel Louise Cruz</td>
+      <td>May 12, 2020</td>
+    </tr>
+    <tr class="active-row">
+      <td>UP Town Center</td>
+      <td>Katipunan Kwatro (Uniqlo)</td>
+      <td>Denver Earl Bugaoisan</td>
+      <td>May 4, 2020</td>
+    </tr>
+    <tr>
+      <td>King Chef Dimsum</td>
+      <td>Kitchen - 238 Banawe</td>
+      <td>Erlito Brilliantes</td>
+      <td>April 17, 2020</td>
+    </tr>
+    <tr class="active-row">
+      <td>Dong Juan</td>
+      <td>Main Entrance</td>
+      <td>John Patrick Lacsamana</td>
+      <td>April 3, 2020</td>
+    </tr>
+    <tr>
+      <td>SM Megamall</td>
+      <td>Main Entrance</td>
+      <td>Alfred Salazar</td>
+      <td>March 20, 2020</td>
+    </tr>
+    <tr class="active-row">
+      <td>University of Santo Tomas</td>
+      <td>Lacson Gate Entrance</td>
+      <td>Lorem Ipsum</td>
+      <td>March 7, 2020</td>
+    </tr>
+    <tr>
+      <td>Sunny 16 Lab, Quezon City</td>
+      <td>20b E Maya Drive</td>
+      <td>Paulo Espinola</td>
+      <td>March 6, 2020</td>
+    </tr>
+    <tr class="active-row">
+      <td>Chef RV Cafe and Restaurant</td>
+      <td>5146 Biñan, Laguna</td>
+      <td>Hezuo Chris Tiu</td>
+      <td>February 29, 2020</td>
+    </tr>
+  </tbody>
+  </table>
+<table id="content-table-payment" class="content-table">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Total</th>
+      <th>Reference Number</th>
+      <th>Transaction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>May 18, 2020</td>
+      <td>13:45</td>
+      <td>PHP 135.00</td>
+      <td>AcK49850Zb</td>
+      <td>Cash-In</td>
+    </tr>
+    <tr class="active-row">
+      <td>May 15, 2020</td>
+      <td>10:42</td>
+      <td>PHP 90.45</td>
+      <td>FjG29582Rq</td>
+      <td>CLiQQ Debit</td>
+    </tr>
+    <tr>
+      <td>May 13, 2020</td>
+      <td>15:32</td>
+      <td>PHP 1,500.00</td>
+      <td>BzN93715Dt</td>
+      <td>UNIQLO Debit</td>
+    </tr>
+    <tr class="active-row">
+      <td>May 12, 2020</td>
+      <td>23:12</td>
+      <td>PHP 5000.00</td>
+      <td>VxY29836Sw</td>
+      <td>Cash-In</td>
+    </tr>
+    <tr>
+      <td>May 7, 2020</td>
+      <td>14:44</td>
+      <td>PHP 23.00</td>
+      <td>YpC48354Xq</td>
+      <td>P2P Bus Charge</td>
+    </tr>
+    <tr class="active-row">
+      <td>May 4, 2020</td>
+      <td>6:39</td>
+      <td>PHP 15.00</td>
+      <td>PxG48321Ha</td>
+      <td>Ministop Debit</td>
+    </tr>
+    <tr>
+      <td>April 9, 2020</td>
+      <td>20:54</td>
+      <td>PHP 15.00</td>
+      <td>YsN29347Ct</td>
+      <td>CLiQQ Debit</td>
+    </tr>
+    <tr class="active-row">
+      <td>April 17, 2020</td>
+      <td>17:10</td>
+      <td>PHP 200.00</td>
+      <td>QwZ23495Ae</td>
+      <td>Cash-In</td>
+  </tbody>
+  </table>
+
+<footer id="main-footer">
+  <p>Copyright &copy; 2020 Biyahe</p>
+</footer>
+
+<script>
+  function appear(tab1,tab2){
+    document.getElementById(tab1).style.display = "table";
+    document.getElementById(tab2).style.display = "none";
+    var x = document.getElementById("content-table-carpool");
+    var y = document.getElementById("content-table-payment");
+
+    if (document.getElementById(tab1) == x){
+      document.getElementById("carpool").style.color = "#3078ff";
+      document.getElementById("payment").style.color = "#555";
+      document.getElementById("carpool").style.borderBottomColor = "#3078ff";
+      document.getElementById("payment").style.borderBottomColor = "rgba(85, 85, 85, 0.5)";
+    }
+    
+    else{
+      document.getElementById("payment").style.color = "#3078ff";
+      document.getElementById("carpool").style.color = "#555";
+      document.getElementById("payment").style.borderBottomColor = "#3078ff";
+      document.getElementById("carpool").style.borderBottomColor = "rgba(85, 85, 85, 0.5)";
+    }
+  }
+</script>
+
+</body>
+
+</html>

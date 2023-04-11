@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	  <title>Debit Payment</title>
+		<link rel="icon" type="image/png" href="images/logo.png" />
+	  <link rel="stylesheet" type="text/css" href="css/debitcreditpayment-style.css">
+   </head>
+
+   <body>
+	<header id="main-header">
+		<div class="head">
+			<a href="LANDING.html" style="color: white;">
+				<h1>Biyahe</h1>
+			</a>
+			<ul>
+				<li><a href="LANDING.html">Home</a></li>
+				<li><a href="COMMUTE.html">Commute</a></li>
+				<li><a href="CASHIN.html">Cash in</a></li>
+				<li><a href="TRANSACTION-HISTORY.html">Transaction History</a></li>
+				<div class="right-menu">
+					<button class="menu-button"></button>
+					<div class="dropdown-menu">
+						<a href="REPORT.html">Report</a>
+						<a href="PRIVACY.html">Privacy Policy</a>
+						<a href="ABOUT.html">About Us</a>
+						<a href="HELP.html">Help</a>
+						<a href="HOME.html">Log-out</a>
+					</div>
+				</div>
+			</ul>
+		</div>
+	</header>
+	<img src="images/bg.jpg" width="600" height="350" class="center">
+
+	<form action="LANDING.HTML">
+	<section>
+		<div>
+			<label class="upper">Cardholder Name</label>
+			<label class="upper">Credit Card No.</label>
+			<label class="upper">CVC/CVV2</label>
+			<label class="upper"><b>Expiry Date</b></label>
+			<label class="upper"><b>Card Issuing Country</b></label>
+			<label class="upper"><b>Card Issuing Bank</b></label>
+		</div>
+
+		<div>
+			<input type="text" id="input1"></br>
+			<input type="text" id="input1"></br>
+			<input type="text" id="input1"></br>
+			<input type="month" class="select-date">
+			<select class="select-country">
+				<option value="jan">Africa</option>
+				<option value="feb">Belgium</option>
+				<option value="mar">Canada</option>
+				<option value="apr ">Denmark</option>
+				<option value="may">Ethiopia</option>
+				<option value="jun">Finland</option>
+				<option value="jul">Greece</option>
+				<option value="aug">Hungary</option>
+				<option value="sep">India</option>
+				<option value="oct">Japan</option>
+				<option value="nov">Korea</option>
+				<option value="dec">Lebanon</option>
+				<option value="dec">Malaysia</option>
+				<option value="dec">Nepal</option>
+				<option value="dec">Philippines</option>
+			</select>
+			<select class="select-issuing">
+				<option value="feb">BDO - Banco De Oro</option>
+				<option value="jan">BPI - Bank of the Philippine Islands</option>
+			</select>
+		</div>
+	</section>
+
+		<div class="authorize">		  
+			<input type="radio" id="radio-authorize">
+			<label for="radio-authorize" class="authorize-label">I authorize FIRST ASIA REALTY DEV CORP to debit the above net charges from my credit card.</label><br>
+		</div>
+
+		<div class="btn-group" align="center">
+			<button type="submit">Proceed</button>
+			<button type="submit">Cancel</button>
+		</div>
+	</form>
+  </body>
+</html>
